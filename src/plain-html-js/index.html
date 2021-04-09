@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plain HTML + JS</title>
+	<link rel="stylesheet" href="../styles/tailwind.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	
+	<header class="bg-gray-100">
+		<nav class="flex justify-between items-center">
+			<div class="w-48">
+				<svg id='logoipsum' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 177.778 100'><path d='M31.941,62.825h25.65V37.175H31.941ZM52.654,47.532h-5.42v-5.42h5.42Zm-15.777-5.42H42.3V52.468H52.654v5.42H36.877Zm37.417-4.937A12.825,12.825,0,1,0,87.119,50,12.84,12.84,0,0,0,74.294,37.175Zm0,20.713A7.888,7.888,0,1,1,82.182,50,7.9,7.9,0,0,1,74.294,57.888Zm58.719-20.713A12.825,12.825,0,1,0,145.837,50,12.84,12.84,0,0,0,133.013,37.175Zm0,20.713A7.888,7.888,0,1,1,140.9,50,7.9,7.9,0,0,1,133.013,57.888Zm-29.36-20.713A12.825,12.825,0,1,0,116.478,50,12.84,12.84,0,0,0,103.653,37.175Zm0,20.713a7.888,7.888,0,1,1,7.488-10.356h-7.488v4.936h7.488A7.9,7.9,0,0,1,103.653,57.888Z' fill='#394149'/></svg>
+			</div>
+			<ul class="flex">
+				<li class="mr-2 px-2 bg-indigo-300"><a href="#">Home</a></li>
+				<li class="mr-2 px-2 underline hover:bg-indigo-200"><a href="about.html">About</a></li>
+				<li class="mr-2 px-2 underline hover:bg-indigo-200" id="contact"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="pt-3 px-8">
+		<section>
+			<p class="pt-3">Rubber cheese fromage cut the cheese. Paneer swiss danish fontina cow boursin lancashire boursin camembert de normandie. Cheese on toast everyone loves hard cheese cut the cheese emmental cheesy feet goat when the cheese comes out everybody's happy. Cream cheese port-salut manchego cauliflower cheese monterey jack when the cheese comes out everybody's happy cheese slices fromage. Pecorino.</p>
+			<p class="pt-3">Cut the cheese chalk and cheese feta. Say cheese chalk and cheese danish fontina fromage bavarian bergkase cheesy grin dolcelatte st. agur blue cheese. Brie cheesecake everyone loves cheesy feet pepper jack edam cut the cheese queso. The big cheese paneer macaroni cheese everyone loves.</p>
+			<p class="pt-3">Cheese and wine parmesan cheesy feet. Cream cheese cottage cheese macaroni cheese fondue monterey jack cheese on toast cottage cheese pecorino. Cow stinking bishop macaroni cheese mozzarella mascarpone cheddar feta melted cheese. Bocconcini fromage frais.</p>
+			<p class="pt-3">Edam taleggio halloumi. Emmental ricotta red leicester cheesy feet cheese slices boursin mascarpone danish fontina. Pecorino cheese triangles halloumi roquefort mascarpone hard cheese cheesy feet jarlsberg. Bavarian bergkase cheese and wine halloumi caerphilly cauliflower cheese cauliflower cheese goat cheese strings. Cheesy grin bavarian bergkase.</p>
+			<p class="pt-3">Babybel danish fontina when the cheese comes out everybody's happy. Babybel fromage monterey jack fromage frais croque monsieur cheese on toast taleggio cheese on toast. Macaroni cheese emmental stinking bishop ricotta cheesy feet camembert de normandie queso blue castello. Cheese and wine blue castello when the cheese comes out everybody's happy squirty cheese taleggio cheese strings bocconcini stilton. Stilton danish fontina.</p>
+		</section>
+	</main>
+
+	<footer></footer>
+
+	<div id="modal" class="modal">
+		<div class="modal-content w-80 h-80 bg-white shadow-xl">
+			<button id="close-modal">Close Modal</button>
+			<p>this is a contact form!</p>
+		</div>
+	</div>
+
+	<script src="modal.js"></script>
+</body>
+</html>

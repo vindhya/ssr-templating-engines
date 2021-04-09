@@ -1,0 +1,15 @@
+{
+  "name": "ssr-templating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "start:db": "json-server --watch api/db.json"
+  },
+  "author": "Vindhya Raviraj",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"about": {
+		"columns": ["year", "description"],
+		"data": [
+			{ "id": 1, "year": 2020, "description": "The pandemic began."},
+			{ "id": 2, "year": 2021, "description": "COVID-19 vaccines being administered."},
+			{ "id": 3, "year": 2021, "description": "This site exists."}
+		]
+	}
+}
