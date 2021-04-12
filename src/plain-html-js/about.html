@@ -5,39 +5,56 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Plain HTML + JS</title>
-	<link rel="stylesheet" href="../styles/tailwind.css">
-	<link rel="stylesheet" href="main.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
 	
-	<header class="bg-gray-100">
-		<nav class="flex justify-between items-center">
-			<div class="w-48">
-				<svg id='logoipsum' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 177.778 100'><path d='M31.941,62.825h25.65V37.175H31.941ZM52.654,47.532h-5.42v-5.42h5.42Zm-15.777-5.42H42.3V52.468H52.654v5.42H36.877Zm37.417-4.937A12.825,12.825,0,1,0,87.119,50,12.84,12.84,0,0,0,74.294,37.175Zm0,20.713A7.888,7.888,0,1,1,82.182,50,7.9,7.9,0,0,1,74.294,57.888Zm58.719-20.713A12.825,12.825,0,1,0,145.837,50,12.84,12.84,0,0,0,133.013,37.175Zm0,20.713A7.888,7.888,0,1,1,140.9,50,7.9,7.9,0,0,1,133.013,57.888Zm-29.36-20.713A12.825,12.825,0,1,0,116.478,50,12.84,12.84,0,0,0,103.653,37.175Zm0,20.713a7.888,7.888,0,1,1,7.488-10.356h-7.488v4.936h7.488A7.9,7.9,0,0,1,103.653,57.888Z' fill='#394149'/></svg>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">
+					<svg id='logoipsum' height="100" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 177.778 100'><path d='M31.941,62.825h25.65V37.175H31.941ZM52.654,47.532h-5.42v-5.42h5.42Zm-15.777-5.42H42.3V52.468H52.654v5.42H36.877Zm37.417-4.937A12.825,12.825,0,1,0,87.119,50,12.84,12.84,0,0,0,74.294,37.175Zm0,20.713A7.888,7.888,0,1,1,82.182,50,7.9,7.9,0,0,1,74.294,57.888Zm58.719-20.713A12.825,12.825,0,1,0,145.837,50,12.84,12.84,0,0,0,133.013,37.175Zm0,20.713A7.888,7.888,0,1,1,140.9,50,7.9,7.9,0,0,1,133.013,57.888Zm-29.36-20.713A12.825,12.825,0,1,0,116.478,50,12.84,12.84,0,0,0,103.653,37.175Zm0,20.713a7.888,7.888,0,1,1,7.488-10.356h-7.488v4.936h7.488A7.9,7.9,0,0,1,103.653,57.888Z' fill='#394149'/></svg>
+				</a>
+				<ul class="navbar-nav">
+					<li class="nav-item"></li><a href="#" class="nav-link">Home</a></li>
+					<li class="nav-item"></li><a href="about.html" class="nav-link">About</a></li>
+					<li id="contact" class="nav-item" data-bs-toggle="modal" data-bs-target="#contactModal">
+						<button class="btn btn-outline-primary mx-2" type="button">Contact</button>
+					</li>
+				</ul>
 			</div>
-			<ul class="flex">
-				<li class="mr-2 px-2 underline hover:bg-indigo-200"><a href="index.html">Home</a></li>
-				<li class="mr-2 px-2 bg-indigo-300"><a href="#">About</a></li>
-				<li class="mr-2 px-2 underline hover:bg-indigo-200" id="contact"><a href="#">Contact</a></li>
-			</ul>
 		</nav>
 	</header>
 	
-	<main class="pt-3 px-8">
+	<main class="container pt-5">
 		<h1 class="text-2xl">About</h1>
 		<section id="table-content"></section>
 	</main>
 
 	<footer></footer>
 
-	<div id="modal" class="modal">
-		<div class="modal-content w-80 h-80 bg-white shadow-2xl">
-			<button id="close-modal">Close Modal</button>
-			<p>this is a contact form!</p>
-		</div>
-	</div>
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This is a contact form!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-	<script src="modal.js"></script>
+	<!-- Bootstrap JS & Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 	<script src="about.js"></script>
 </body>
 </html>
